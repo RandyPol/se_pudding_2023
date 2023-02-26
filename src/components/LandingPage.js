@@ -4,11 +4,13 @@ import TinderLogo from '../images/tinder-logo.svg'
 function LandingPage() {
   return (
     <div className="landing">
-      <img src={TinderLogo} alt="Tinder Logo" className="tinder-logo" />
-      <h1 className="heading">
-        Find Out What the Millennial Tinder User Match Rate Is
-      </h1>
-      <button className="btn">Enter</button>
+      <div className="landing__containter">
+        <img src={TinderLogo} alt="Tinder Logo" className="landing__logo" />
+        <h1 className="landing__heading">
+          What Millennial Users Should Expect When They Swipe?
+        </h1>
+        <button className="landing__button-enter">Find Out</button>
+      </div>
     </div>
   )
 }
