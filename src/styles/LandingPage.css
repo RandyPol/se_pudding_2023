@@ -1,0 +1,40 @@
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../images/background-data1.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* .tinder-logo {
+  max-width: 200px;
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: #ff6b6b;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 30px;
+} */
