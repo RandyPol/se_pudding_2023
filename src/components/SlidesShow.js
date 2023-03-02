@@ -31,7 +31,10 @@ const SlidesShow = () => {
       {expanded ? (
         <div className="slideshow__expanded">
           <div className="slideshow__image-container">
-            <img src={slide.imageUrl} alt={slide.title} />
+            <img
+              src={require(`../images/chartsFigures/${slide.imageUrl}`)}
+              alt={slide.title}
+            />
           </div>
           <div className="slideshow__content">
             <h2>{slide.title}</h2>
@@ -54,14 +57,16 @@ const SlidesShow = () => {
           </div>
         </div>
       ) : (
-        <>
-          <h1>What Millennial Users Should Expect When They Swipe?</h1>
-          <p>
+        <div className="introduction">
+          <h1 className="introduction__title">
+            What Millennial Users Should Expect When They Swipe?
+          </h1>
+          <p className="introduction__paragraphs introduction__authors">
             Data Scientist: Jacques Diambra Odi, Stephanie | Software Engineers:
             Randy Polanco, and Eddie Mendez
           </p>
-          <h2>ABSTRACT</h2>
-          <p>
+          <h2 className="introduction__headings">ABSTRACT</h2>
+          <p className="introduction__paragraphs">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years old. Richard McClintock, a Latin professor
@@ -75,8 +80,8 @@ const SlidesShow = () => {
             Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
             amet..", comes from a line in section 1.10.32.
           </p>
-          <h2>Introductions</h2>
-          <p>
+          <h2 className="introduction__headings">Introductions</h2>
+          <p className="introduction__paragraphs">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -87,6 +92,10 @@ const SlidesShow = () => {
             sites still in their infancy. Various versions have evolved over the
             years, sometimes by accident, sometimes on purpose (injected humour
             and the like).
+          </p>
+          <h2 className="introduction__headings">Graphs: Numbers Don't Lie</h2>
+          <p className="introduction__paragraphs-graphs">
+            (Click on the graphs for full details)
           </p>
           <div className="slideshow__slides">
             {slides.map((slide, index) => (
@@ -95,13 +104,17 @@ const SlidesShow = () => {
                 key={slide.id}
                 onClick={() => handleSlideClick(index)}
               >
-                <img src={slide.imageUrl} alt={slide.title} />
+                <img
+                  className="slideshow__slide-img"
+                  src={require(`../images/chartsFigures/${slide.imageUrl}`)}
+                  alt={slide.title}
+                />
                 <h3>{slide.title}</h3>
               </div>
             ))}
           </div>
-          <h2>CONCLUSION</h2>
-          <p>
+          <h2 className="introduction__headings">CONCLUSION</h2>
+          <p className="introduction__paragraphs">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -113,7 +126,7 @@ const SlidesShow = () => {
             years, sometimes by accident, sometimes on purpose (injected humour
             and the like).
           </p>
-        </>
+        </div>
       )}
     </div>
   )
