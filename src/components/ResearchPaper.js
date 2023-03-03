@@ -5,8 +5,8 @@ const MainPaper = ({ slides, handleSlideClick }) => {
     <div className="introduction">
       <h1 className="introduction__title">Will You Find Love Swiping Right?</h1>
       <p className="introduction__paragraphs introduction__authors">
-        Data Scientist: Jacques Diambra Odi Data Analyst: Stephanie Zeng
-        <br /> Software Engineers: Randy Polanco, and Eddie Mendez
+        Data Scientist: Jacques Diambra Odi | Data Analyst: Stephanie Zeng
+        <br /> Software Engineers: Randy Polanco | Eddie Mendez
       </p>
       <h2 className="introduction__headings">Introductions</h2>
       <p className="introduction__paragraphs">

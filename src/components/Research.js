@@ -1,6 +1,6 @@
 import React from 'react'
 import ExpandedGraph from './ExpandedGraph'
-import MainPaper from './MainPaper'
+import ResearchPaper from './ResearchPaper'
 import { slides } from '../constants'
 
 const SlidesShow = () => {
@@ -25,7 +25,7 @@ const SlidesShow = () => {
           setExpanded={setExpanded}
         />
       ) : (
-        <MainPaper slides={slides} handleSlideClick={handleSlideClick} />
+        <ResearchPaper slides={slides} handleSlideClick={handleSlideClick} />
       )}
     </div>
   )
