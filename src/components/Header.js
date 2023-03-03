@@ -9,22 +9,14 @@ const Header = () => {
         <img className="header__logo" src={logo} alt="Data icon" />
         <p className="header__logo-text">Tinder Data Pudding</p>
       </Link>
-
-      <button
-        className="header__button-add"
-        onClick={() => console.log('popupform')}
-      >
-        Check How You Match
-      </button>
-
-      <Link to="/team" className="header__profile-link">
-        <button
-          className="header__button-add"
-          onClick={() => console.log('popupform')}
-        >
-          Team
-        </button>
-      </Link>
+      <div>
+        <Link to="/dataSlide" className="header__project-link">
+          <button className="header__button header__button-research">Research</button>
+        </Link>
+        <Link to="/team" className="header__profile-link">
+          <button className="header__button header__button-team">Team</button>
+        </Link>
+      </div>
     </header>
   )
 }
