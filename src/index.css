@@ -1,2 +1,24 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
 @import url(./vendor/normalize.css);
+@import url(./fonts/fonts.css);
+@import url(./styles/Header.css);
+@import url(./styles/Page.css);
 @import url(./styles/LandingPage.css);
+@import url(./styles/MainPaper.css);
+@import url(./styles/SlidesShow.css);
+@import url(./styles/ExpandedGraph.css);
+@import url(./styles/Team.css);
+@import url(./styles/Popup.css);
