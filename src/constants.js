@@ -672,3 +672,43 @@ export const slides = [
     },
   },
 ]
+
+export const teamMembers = [
+  {
+    image: 'https://ca.slack-edge.com/T01C0QS9NB0-U04ERD3DXB7-8c0db27b9556-512',
+    name: 'Jacques Diambra Odi',
+    role: 'Data Scientist',
+    linkedin: 'https://www.linkedin.com/in/jodiambra/',
+    github: 'https://github.com/jodiambra',
+    favoriteFood: 'Pizza',
+    hobbies: 'Football',
+  },
+  {
+    image: 'https://ca.slack-edge.com/T01C0QS9NB0-U04ERD5ERE1-273154468f28-512',
+    name: 'Stephanie Zeng',
+    role: 'Data Analyst',
+    linkedin: 'https://www.linkedin.com/in/Stephaniezeng/',
+    github: 'https://github.com/Stephaniezeng',
+    favoriteFood: 'Biking',
+    hobbies: 'Walking',
+  },
+  {
+    image: 'https://ca.slack-edge.com/T01C0QS9NB0-U04E60DPT19-d931324849bf-512',
+    name: 'Randy Polanco',
+    role: 'Software Engineer',
+    linkedin: 'https://www.linkedin.com/in/randypol/',
+    github: 'https://github.com/RandyPol',
+    favoriteFood: 'Chipotle',
+    hobbies: 'Rowing',
+  },
+  {
+    image: 'https://ca.slack-edge.com/T01C0QS9NB0-U04E2THE129-d5193b2c6651-512',
+    name: 'Eddie Mendez',
+    role: 'Software Engineer',
+    linkedin:
+      'https://www.linkedin.com/in/https:/www.linkedin.com/in/eddie-mendez-594201a0/',
+    github: 'https://github.com/eddiemendez95',
+    favoriteFood: 'Salads',
+    hobbies: 'Soccer',
+  },
+]
