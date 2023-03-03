@@ -5,7 +5,7 @@ import { Route, Switch, useLocation } from 'react-router-dom'
 import LandingPage from './LandingPage'
 import Header from './Header'
 import Team from './Team'
-import SlidesShow from './SlidesShow'
+import Research from './Research'
 import Footer from './Footer'
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         </Route>
         <main className="page__container">
           <Route path="/dataSlide">
-            <SlidesShow />
+            <Research />
           </Route>
           <Route path="/team">
             <Team />
