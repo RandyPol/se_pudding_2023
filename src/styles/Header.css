@@ -51,3 +51,45 @@
 .header__button-team:hover {
   background-color: #3d8b3d;
 }
+
+@media screen and (max-width: 605px) {
+  .header {
+    padding: 20px 20px;
+  }
+  .header__logo {
+    height: 40px;
+  }
+  .header__logo-text {
+    font-size: 24px;
+  }
+  .header__button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo {
+    height: 30px;
+  }
+  .header__logo-text {
+    font-size: 20px;
+  }
+  .header__button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__logo {
+    height: 25px;
+  }
+  .header__logo-text {
+    font-size: 18px;
+  }
+  .header__button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
