@@ -89,7 +89,7 @@ export const slides = [
     title: 'Distribution of Matches',
     imageUrl: 'figure_6.png',
     description:
-      'Average matches are around 400, with the max at 1969. The minimum amount of matches is 0, while the upper quartile is 846. Most people get matches on 25% of swipes, while the interquartile range is 0-40%.',
+      'Average matches are around 400, with the max at 1969. The minimum amount of matches is 0, while the upper quartile is 846.',
     type: 'box',
     data: {
       y: [
@@ -383,7 +383,7 @@ export const slides = [
     title: 'Distribution of Percentage',
     imageUrl: 'figure_7.png',
     description:
-      'Average matches are around 400, with the max at 1969. The minimum amount of matches is 0, while the upper quartile is 846. Most people get matches on 25% of swipes, while the interquartile range is 0-40%.',
+      'Most people get matches on 25% of swipes, while the interquartile range is 0-40%.',
     type: 'box',
     data: {
       y: [
