@@ -20,6 +20,7 @@ body {
 @import url(./styles/MainPaper.css);
 @import url(./styles/SlidesShow.css);
 @import url(./styles/ExpandedGraph.css);
+@import url(./styles/Plots.css);
 @import url(./styles/Team.css);
 @import url(./styles/Popup.css);
 @import url(./styles/Footer.css);
