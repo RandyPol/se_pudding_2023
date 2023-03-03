@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/se_pudding_2023/static/css/main.c14db27a.css",
-    "main.js": "/se_pudding_2023/static/js/main.5158b9f3.js",
+    "main.js": "/se_pudding_2023/static/js/main.e82417c9.js",
     "static/js/787.65e1b675.chunk.js": "/se_pudding_2023/static/js/787.65e1b675.chunk.js",
     "static/media/background-data-white.gif": "/se_pudding_2023/static/media/background-data-white.6e3fba1bbe9a7a0e9ef6.gif",
     "static/media/figure_1.png": "/se_pudding_2023/static/media/figure_1.afff659d2664662fe5aa.png",
@@ -15,11 +15,11 @@
     "static/media/tinder-logo.svg": "/se_pudding_2023/static/media/tinder-logo.938bddb9f9ed520d8625e816fd193fcf.svg",
     "index.html": "/se_pudding_2023/index.html",
     "main.c14db27a.css.map": "/se_pudding_2023/static/css/main.c14db27a.css.map",
-    "main.5158b9f3.js.map": "/se_pudding_2023/static/js/main.5158b9f3.js.map",
+    "main.e82417c9.js.map": "/se_pudding_2023/static/js/main.e82417c9.js.map",
     "787.65e1b675.chunk.js.map": "/se_pudding_2023/static/js/787.65e1b675.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c14db27a.css",
-    "static/js/main.5158b9f3.js"
+    "static/js/main.e82417c9.js"
   ]
 }
