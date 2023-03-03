@@ -6,6 +6,7 @@ import LandingPage from './LandingPage'
 import Header from './Header'
 import Team from './Team'
 import SlidesShow from './SlidesShow'
+import Footer from './Footer'
 
 function App() {
   const location = useLocation()
@@ -25,6 +26,7 @@ function App() {
           </Route>
         </main>
       </Switch>
+      <Footer />
     </div>
   )
 }
