@@ -3,7 +3,7 @@ import ExpandedGraph from './ExpandedGraph'
 import ResearchPaper from './ResearchPaper'
 import { slides } from '../constants'
 
-const SlidesShow = () => {
+const Research = () => {
   // state for the currently selected slide
   const [currentSlide, setCurrentSlide] = React.useState(0)
   const [expanded, setExpanded] = React.useState(false)
@@ -31,4 +31,4 @@ const SlidesShow = () => {
   )
 }
 
-export default SlidesShow
+export default Research

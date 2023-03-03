@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainPaper = ({ slides, handleSlideClick }) => {
+const ResearchPaper = ({ slides, handleSlideClick }) => {
   return (
     <div className="introduction">
       <h1 className="introduction__title">Will You Find Love Swiping Right?</h1>
@@ -89,4 +89,4 @@ const MainPaper = ({ slides, handleSlideClick }) => {
   )
 }
 
-export default MainPaper
+export default ResearchPaper
