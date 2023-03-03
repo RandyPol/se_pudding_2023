@@ -1,57 +1,24 @@
 export const slides = [
+  // Pie Chart Figure 1
   {
     id: 1,
     title: 'Total Percentage of Relationships',
     imageUrl: 'figure_1.png',
-    description: 'Description for slide 1',
-  },
-  {
-    id: 2,
-    title: 'Total Percentage of Tinder Users',
-    imageUrl: 'figure_2.png',
-    description: 'Description for slide 2',
-  },
-  {
-    id: 3,
-    title: 'Relationships Found With Tinder',
-    imageUrl: 'figure_3.png',
-    description: 'Description for slide 3',
-  },
-  {
-    id: 4,
-    title: 'Relationship Found Without Tinder',
-    imageUrl: 'figure_4.png',
-    description: 'Description for slide 1',
-  },
-  {
-    id: 5,
-    title: 'Relationship Success Rates',
-    imageUrl: 'figure_5.png',
-    description: 'Description for slide 1',
-  },
-  {
-    id: 6,
-    title: 'Distribution of Matches',
-    imageUrl: 'figure_6.png',
-    description: 'Description for slide 6',
-  },
-  {
-    id: 7,
-    title: 'Distribution of Percentage',
-    imageUrl: 'figure_7.png',
-    description: 'Description for slide 7',
-  },
-]
-
-const charts = [
-  {
+    description:
+      'Within this dataset we wanted to know how many people are in a relationship. There are approximately 65% of people not in a relationship and approximately 35% of people in a relationship.',
     type: 'pie',
     data: { values: [665, 1231], labels: ['Relationship', 'No Relationship'] },
     layout: {
       title: 'Total Percentage of Relationships',
     },
   },
+  // Pie Chart Figure 2
   {
+    id: 2,
+    title: 'Total Percentage of Tinder Users',
+    imageUrl: 'figure_2.png',
+    description:
+      'Next, we wanted to see how many people within this dataset use tinder whether they are in a relationship or not. There is a higher number of people who do not use tinder. Only 8.65% of people are using tinder.',
     type: 'pie',
     data: {
       values: [164, 1732],
@@ -61,7 +28,13 @@ const charts = [
       title: 'Total Percentage of Tinder Users',
     },
   },
+  // Pie Chart Figure 3
   {
+    id: 3,
+    title: 'Relationships Found With Tinder',
+    imageUrl: 'figure_3.png',
+    description:
+      'From the previous slide, we saw that only a very low number of people are using tinder. But how many have found a relationship from using tinder? Our findings show that about 52% of people are in a relationship vs. around 48% of people are not.',
     type: 'pie',
     data: {
       values: [86, 78],
@@ -71,7 +44,13 @@ const charts = [
       title: 'Relationships Found Using Tinder',
     },
   },
+  // Pie Chart Figure 4
   {
+    id: 4,
+    title: 'Relationship Found Without Tinder',
+    imageUrl: 'figure_4.png',
+    description:
+      'Now that we know 52% of people find a relationship using tinder, how many people within this dataset are able to find a relationship without using tinder? Our findings show only about 33% of people are able to find a relationship without using tinder. That means your chance of finding love is lower when you don’t use tinder!',
     type: 'pie',
     data: {
       values: [579, 1153],
@@ -81,7 +60,13 @@ const charts = [
       title: 'Relationships Found Without Tinder',
     },
   },
+  // Bar Graph Figure 5
   {
+    id: 5,
+    title: 'Relationship Success Rates',
+    imageUrl: 'figure_5.png',
+    description:
+      'Even though there is no correlation between the number of matches and match rate, the user still has a higher chance of finding a relationship when using tinder. A staggering 52% success rate of finding a relationship when using tinder!! ',
     type: 'bar',
     data: {
       x: ['With Tinder', 'Without Tinder'],
@@ -100,6 +85,11 @@ const charts = [
   },
   // Box Plot Figure 6
   {
+    id: 6,
+    title: 'Distribution of Matches',
+    imageUrl: 'figure_6.png',
+    description:
+      'Average matches are around 400, with the max at 1969. The minimum amount of matches is 0, while the upper quartile is 846. Most people get matches on 25% of swipes, while the interquartile range is 0-40%.',
     type: 'box',
     data: {
       y: [
@@ -389,6 +379,11 @@ const charts = [
   },
   // Box Plot Figure 7
   {
+    id: 7,
+    title: 'Distribution of Percentage',
+    imageUrl: 'figure_7.png',
+    description:
+      'Average matches are around 400, with the max at 1969. The minimum amount of matches is 0, while the upper quartile is 846. Most people get matches on 25% of swipes, while the interquartile range is 0-40%.',
     type: 'box',
     data: {
       y: [
