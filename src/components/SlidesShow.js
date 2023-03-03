@@ -1,4 +1,6 @@
 import React from 'react'
+import ExpandedGraph from './ExpandedGraph'
+import MainPaper from './MainPaper'
 import { slides } from '../constants'
 
 const SlidesShow = () => {
@@ -6,127 +8,24 @@ const SlidesShow = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0)
   const [expanded, setExpanded] = React.useState(false)
 
-  const slide = slides[currentSlide]
-
   // Functionality for slide click
   function handleSlideClick(slideIndex) {
     setCurrentSlide(slideIndex)
     setExpanded(true)
   }
-  // Functionality for next slide
-  function handleNextClick() {
-    setCurrentSlide((currentSlide + 1) % slides.length)
-  }
-  // Functionality for previous slide
-  function handlePrevClick() {
-    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)
-  }
 
-  // Functionality for close expanded slide
-  function handleCloseClick() {
-    setExpanded(false)
-  }
   return (
     <div className="slideshow page__slideshow">
       {expanded ? (
-        <div className="slideshow__expanded">
-          <div className="slideshow__image-container">
-            <img
-              src={require(`../images/chartsFigures/${slide.imageUrl}`)}
-              alt={slide.title}
-            />
-          </div>
-          <div className="slideshow__content">
-            <h2>{slide.title}</h2>
-            <p>{slide.description}</p>
-            <div className="slideshow__navigation">
-              <button
-                disabled={currentSlide === 0 ? true : false}
-                onClick={handlePrevClick}
-              >
-                Prev
-              </button>
-              <button onClick={handleCloseClick}>Close</button>
-              <button
-                disabled={currentSlide + 1 === slides.length ? true : false}
-                onClick={handleNextClick}
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        </div>
+        <ExpandedGraph
+          slides={slides}
+          expanded={expanded}
+          currentSlide={currentSlide}
+          setCurrentSlide={setCurrentSlide}
+          setExpanded={setExpanded}
+        />
       ) : (
-        <div className="introduction">
-          <h1 className="introduction__title">
-            What Millennial Users Should Expect When They Swipe?
-          </h1>
-          <p className="introduction__paragraphs introduction__authors">
-            Data Scientist: Jacques Diambra Odi, Stephanie | Software Engineers:
-            Randy Polanco, and Eddie Mendez
-          </p>
-          <h2 className="introduction__headings">ABSTRACT</h2>
-          <p className="introduction__paragraphs">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32.
-          </p>
-          <h2 className="introduction__headings">Introductions</h2>
-          <p className="introduction__paragraphs">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
-          </p>
-          <h2 className="introduction__headings">Graphs: Numbers Don't Lie</h2>
-          <p className="introduction__paragraphs-graphs">
-            (Click on the graphs for full details)
-          </p>
-          <div className="slideshow__slides">
-            {slides.map((slide, index) => (
-              <div
-                className="slideshow__slide"
-                key={slide.id}
-                onClick={() => handleSlideClick(index)}
-              >
-                <img
-                  className="slideshow__slide-img"
-                  src={require(`../images/chartsFigures/${slide.imageUrl}`)}
-                  alt={slide.title}
-                />
-                <h3>{slide.title}</h3>
-              </div>
-            ))}
-          </div>
-          <h2 className="introduction__headings">CONCLUSION</h2>
-          <p className="introduction__paragraphs">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
-          </p>
-        </div>
+        <MainPaper slides={slides} handleSlideClick={handleSlideClick} />
       )}
     </div>
   )
