@@ -5,13 +5,14 @@ This project is a React app built to showcase research conducted by a team of da
 ## To check the live project, visit the following link: https://randypol.github.io/se_pudding_2023/#/
 
 ## Technologies Used
+
 - React: A popular JavaScript library for building user interfaces.
 - Plotly.js: An open-source JavaScript graphing library that allows users to create interactive charts and graphs.
 - React router: A package that provides dynamic routing for React applications.
-    - Route: A component that defines a route and its corresponding component.
-    - Switch: A component that renders the first matching route within its children.
-    - useLocation: A hook that returns the current location object of the application.
-    - HashRouter: A type of router that uses the URL hash to maintain the application's state.
+  - Route: A component that defines a route and its corresponding component.
+  - Switch: A component that renders the first matching route within its children.
+  - useLocation: A hook that returns the current location object of the application.
+  - HashRouter: A type of router that uses the URL hash to maintain the application's state.
 - React-icons: A package that provides popular icons as React components.
 
 ## Project Images
@@ -32,4 +33,8 @@ This project is a React app built to showcase research conducted by a team of da
 
 ![About Team Page Screen](/src/images/ProjectScreenshots/TeamScreen.png)
 
-### Contact 
+## Contact
+
+### LinkedIn
+
+https://www.linkedin.com/in/randypol/
