@@ -3,41 +3,37 @@ import React from 'react'
 const MainPaper = ({ slides, handleSlideClick }) => {
   return (
     <div className="introduction">
-      <h1 className="introduction__title">
-        What Millennial Users Should Expect When They Swipe?
-      </h1>
+      <h1 className="introduction__title">Will You Find Love Swiping Right?</h1>
       <p className="introduction__paragraphs introduction__authors">
-        Data Scientist: Jacques Diambra Odi, Stephanie | Software Engineers:
-        Randy Polanco, and Eddie Mendez
-      </p>
-      <h2 className="introduction__headings">ABSTRACT</h2>
-      <p className="introduction__paragraphs">
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old. Richard McClintock, a Latin professor at
-        Hampden-Sydney College in Virginia, looked up one of the more obscure
-        Latin words, consectetur, from a Lorem Ipsum passage, and going through
-        the cites of the word in classical literature, discovered the
-        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-        of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-        Cicero, written in 45 BC. This book is a treatise on the theory of
-        ethics, very popular during the Renaissance. The first line of Lorem
-        Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-        1.10.32.
+        Data Scientist: Jacques Diambra Odi Stephanie Data Analyst: Stephanie
+        Zeng | Software Engineers: Randy Polanco, and Eddie Mendez
       </p>
       <h2 className="introduction__headings">Introductions</h2>
       <p className="introduction__paragraphs">
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a
-        search for 'lorem ipsum' will uncover many web sites still in their
-        infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like).
+        Released in 2012, Tinder is an online dating and geosocial networking
+        application. In Tinder lingo, “swipe right” to like and “swipe left” to
+        dislike other users’ profiles, which include their photos, a short bio,
+        and a list of their interests. When both parties have “swiped right” on
+        each other, they will be notified that they have a match and can start
+        chatting. The user can also go beyond their distance settings and match
+        with people around the world with the Passport feature by upgrading to a
+        Tinder premium subscription. Tinder advertises itself as the world’s
+        most popular dating app, making it a great way to meet new people from
+        all over. They claim they have over 55 billion matches but how many have
+        turned into a successful relationship?{' '}
+      </p>{' '}
+      <p className="introduction__paragraphs">
+        Looking at a small dataset with information from 1896 participants, it
+        provides us metrics related to whether they are in a relationship or
+        not, if they use tinder, the number of matches of each user, and the
+        match rate.
+      </p>{' '}
+      <p className="introduction__paragraphs">
+        We thought it would be interesting to learn if using Tinder, the world’s
+        most popular dating app, will yield a successful relationship and if
+        having more matches will also mean a higher success rate.
       </p>
-      <h2 className="introduction__headings">Graphs: Numbers Don't Lie</h2>
+      <h2 className="introduction__headings">Numbers Don't Lie</h2>
       <p className="introduction__paragraphs-graphs">
         (Click on the graphs for full details)
       </p>
