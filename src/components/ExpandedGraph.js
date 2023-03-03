@@ -38,18 +38,20 @@ const ExpandedGraph = ({
           />
           <p className="card__logo--text">: Data Pudding</p>
         </div>
+        <div className="card__top--container">
+          {slide.type === 'pie' && (
+            <PieChart data={slide.data} layout={slide.layout} />
+          )}
+          {slide.type === 'bar' && (
+            <BarGraph data={slide.data} layout={slide.layout} />
+          )}
+          {slide.type === 'box' && (
+            <BoxPlot data={slide.data} layout={slide.layout} />
+          )}
 
-        {slide.type === 'pie' && (
-          <PieChart data={slide.data} layout={slide.layout} />
-        )}
-        {slide.type === 'bar' && (
-          <BarGraph data={slide.data} layout={slide.layout} />
-        )}
-        {slide.type === 'box' && (
-          <BoxPlot data={slide.data} layout={slide.layout} />
-        )}
-        <h2 class="card__title">{slide.title}</h2>
-        <p class="card__description">{slide.description}</p>
+          <h2 class="card__title">{slide.title}</h2>
+          <p class="card__description">{slide.description}</p>
+        </div>
         <CardButtons
           currentSlide={currentSlide}
           handlePrevClick={handlePrevClick}
