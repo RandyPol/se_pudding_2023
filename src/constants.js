@@ -689,7 +689,7 @@ export const teamMembers = [
     role: 'Data Analyst',
     linkedin: 'https://www.linkedin.com/in/Stephaniezeng/',
     github: 'https://github.com/Stephaniezeng',
-    favoriteFood: 'Biking',
+    favoriteFood: 'Curry Chicken',
     hobbies: 'Walking',
   },
   {
