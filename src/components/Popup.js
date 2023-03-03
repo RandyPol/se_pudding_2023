@@ -28,11 +28,10 @@ const Popup = ({ isOpen, containerName, onClose, children }) => {
   return (
     <div className={`popup`} onClick={handleOverlay}>
       {/* the container for the contents */}
-      <div className={`popup__container popup_container_${containerName}`}>
-        {/* here will be anything you add as `children`
-         */}
-        {children}
-      </div>
+
+      {/* here will be anything you add as `children`
+       */}
+      {children}
     </div>
   )
 }
