@@ -1,9 +1,9 @@
 import React from 'react'
 import Popup from './Popup'
 import CardButtons from './CardButtons'
-import PieChart from './PieChart'
-import BarGraph from './BarGraph'
-import BoxPlot from './BoxPlot'
+import PieChart from './Charts/PieChart'
+import BarGraph from './Charts/BarGraph'
+import BoxPlot from './Charts/BoxPlot'
 import TinderLogo from '../images/tinder-logo.svg'
 
 const ExpandedGraph = ({
