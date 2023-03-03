@@ -1,14 +1,10 @@
 import React from 'react'
 import Popup from './Popup'
+import CardButtons from './CardButtons'
 import PieChart from './PieChart'
 import BarGraph from './BarGraph'
 import BoxPlot from './BoxPlot'
 import TinderLogo from '../images/tinder-logo.svg'
-
-// Icons
-import { AiFillHeart } from 'react-icons/ai'
-import { RiArrowGoBackFill } from 'react-icons/ri'
-import { ImCross } from 'react-icons/im'
 
 const ExpandedGraph = ({
   slides,
@@ -54,29 +50,13 @@ const ExpandedGraph = ({
         )}
         <h2 class="card__title">{slide.title}</h2>
         <p class="card__description">{slide.description}</p>
-
-        <div className="card__button--container">
-          <button
-            className="card__button card__button--prev"
-            disabled={currentSlide === 0 ? true : false}
-            onClick={handlePrevClick}
-          >
-            <RiArrowGoBackFill size={30} color="#FFC107" />
-          </button>
-          <button
-            className="card__button card__button--close"
-            onClick={handleCloseClick}
-          >
-            <ImCross size={30} color="#FD5068" />
-          </button>
-          <button
-            className="card__button card__button--next"
-            disabled={currentSlide + 1 === slides.length ? true : false}
-            onClick={handleNextClick}
-          >
-            <AiFillHeart size={30} color="#4CAF50" />
-          </button>
-        </div>
+        <CardButtons
+          currentSlide={currentSlide}
+          handlePrevClick={handlePrevClick}
+          handleCloseClick={handleCloseClick}
+          slides={slides}
+          handleNextClick={handleNextClick}
+        />
       </div>
     </Popup>
   )
