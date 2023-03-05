@@ -38,7 +38,7 @@ export const slides = [
     type: 'pie',
     data: {
       values: [86, 78],
-      labels: ['User', 'Not A User'],
+      labels: ['Relationship', 'Single'],
     },
     layout: {
       title: 'Relationships Found Using Tinder',
@@ -54,7 +54,7 @@ export const slides = [
     type: 'pie',
     data: {
       values: [579, 1153],
-      labels: ['With Tinder', 'Without Tinder'],
+      labels: ['Relationship', 'Single'],
     },
     layout: {
       title: 'Relationships Found Without Tinder',
